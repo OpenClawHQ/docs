@@ -1,4 +1,4 @@
-# OpenClawHQ Documentation
+# effectorHQ Documentation
 
 The knowledge base for building skills and extensions with OpenClaw.
 
@@ -40,4 +40,4 @@ For doc-specific conventions: write in plain language, use code examples liberal
 
 ---
 
-<sub>OpenClawHQ · Every claw extends the reach.</sub>
+<sub>effectorHQ · Every effector extends the reach.</sub>

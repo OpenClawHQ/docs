@@ -439,7 +439,7 @@ Search keywords for discovery.
   "author": "OpenClaw Team",
   "license": "MIT",
   "homepage": "https://docs.openclaw.com/channels/whatsapp",
-  "repository": "https://github.com/OpenClawHQ/channel-whatsapp",
+  "repository": "https://github.com/effectorHQ/channel-whatsapp",
   "keywords": ["whatsapp", "messaging", "channel"],
   "kind": "plugin",
   "channels": ["whatsapp"],

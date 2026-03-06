@@ -86,7 +86,7 @@ openclaw my-first-skill greet --user "Bob"
 安装 lint 工具：
 
 ```bash
-npm install -g @openclawHQ/skill-lint
+npm install -g @effectorhq/skill-lint
 ```
 
 运行验证：
@@ -144,7 +144,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: OpenClawHQ/skill-lint-action@v1
+      - uses: effectorHQ/skill-lint-action@v1
         with:
           fail-on-warnings: 'true'
 ```
@@ -174,8 +174,8 @@ openclaw skill install my-first-skill
 ## 接下来
 
 - [深入了解 SKILL.md 格式](../guides/skill-development.md)
-- [查看实战示例](https://github.com/OpenClawHQ/cookbook)
-- [参考完整的生产级 skill](https://github.com/OpenClawHQ/linear-skill)——零 lint 错误/警告的标杆实现
+- [查看实战示例](https://github.com/effectorHQ/cookbook)
+- [参考完整的生产级 skill](https://github.com/effectorHQ/linear-skill)——零 lint 错误/警告的标杆实现
 - [构建 TypeScript Extension](../guides/extension-development.md)——如果你需要添加 channels 或 providers
 
-如有问题，在 [OpenClawHQ](https://github.com/orgs/OpenClawHQ/discussions) 提问，或直接在相关 repo 开 issue。
+如有问题，在 [effectorHQ](https://github.com/orgs/effectorHQ/discussions) 提问，或直接在相关 repo 开 issue。
