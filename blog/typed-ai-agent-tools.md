@@ -29,8 +29,8 @@ cd my-skill
 
 npx @effectorhq/skill-lint .              # structure + schema lint
 npx @effectorhq/skill-eval . --static-only
-npx effector-core validate .             # schema validate + type-check
-npx effector-core compile . -t mcp      # emit MCP tool surface
+npx @effectorhq/core validate .             # schema validate + type-check
+npx @effectorhq/core compile . -t mcp      # emit MCP tool surface
 ```
 
 ## Compile targets you can plug into
