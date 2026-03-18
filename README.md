@@ -1,29 +1,29 @@
 # effectorHQ Documentation
 
-The knowledge base for building skills and extensions with OpenClaw.
+The knowledge base for building skills and extensions with effectorHQ.
 
 ## Quick Navigation
 
 | Guide | For who | What you'll learn |
 |-------|---------|-------------------|
 | [Getting Started](guides/getting-started.md) | New builders | Create your first skill in 10 minutes |
-| [Architecture](guides/architecture.md) | Anyone curious | How OpenClaw works: Gateway, Agent, Channels, Skills & Extensions |
+| [Architecture](guides/architecture.md) | Anyone curious | How effectorHQ fits together: manifests, core, targets, bridges |
 | [Skill Development](guides/skill-development.md) | Skill builders | Build language-agnostic skills with SKILL.md |
 | [Extension Development](guides/extension-development.md) | TypeScript developers | Build full-featured plugins with TypeScript |
 | [SKILL.md Format Reference](reference/skill-format.md) | Everyone | Complete reference for SKILL.md files |
-| [Plugin Manifest Reference](reference/plugin-manifest.md) | Extension builders | Complete reference for openclaw.plugin.json |
+| [Manifest Reference](reference/plugin-manifest.md) | Extension builders | Reference for `effector.toml` runtime bindings |
 
 ## Key Concepts
 
-**Skills**: Language-agnostic, markdown-based automation. Live in `~/.openclaw/workspace/skills/`. Published to ClawHub.
+**Skills**: Language-agnostic, markdown-based automation. Stored alongside code (or in a skills directory) and compiled/validated via the effector toolchain.
 
 **Extensions/Plugins**: Full-featured TypeScript packages. Implement channels, configuration, and complex logic. Distributed via npm.
 
-**ClawHub**: The skill registry. Search, publish, and install community skills.
+**Registry**: Optional distribution surface. Effector manifests are runtime-neutral; registries are integrations, not the core.
 
-**Gateway**: WebSocket control plane (`ws://127.0.0.1:18789`) managing sessions, presence, config, webhooks.
+**Core**: Shared kernel that parses `SKILL.md` + `effector.toml`, validates schema/types, and compiles to targets (MCP / OpenAI Agents / LangChain / JSON).
 
-**Agent Runtime**: Processes inbound messages, executes tools via RPC.
+**Agent Runtime**: Any runtime that can consume a compiled target artifact (e.g. MCP tool schema). effectorHQ does not require a bespoke runtime.
 
 ## Getting Help
 
