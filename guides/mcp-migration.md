@@ -77,7 +77,7 @@ npm install -g @effectorhq/skill-lint
 skill-lint .
 
 # Run security audit
-npx effector-audit scan .
+npx @effectorhq/audit scan .
 ```
 
 ## Step 4: Your tool is now composable

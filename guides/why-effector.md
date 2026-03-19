@@ -69,7 +69,7 @@ Analyze code diffs and produce structured review reports...
 
 ```bash
 npx @effectorhq/skill-lint .    # Validates SKILL.md structure
-npx effector-audit scan .        # Security audit
+npx @effectorhq/audit scan .        # Security audit
 ```
 
 ### 4. Compile to any runtime
