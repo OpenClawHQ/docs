@@ -1,0 +1,15 @@
+# Copy this file to .github/workflows/effector-validate.yml
+# Validates effector.toml on every push and pull request.
+
+name: Effector Validate
+on: [push, pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: effectorHQ/effector-action@v1
+        with:
+          path: '.'
+          # fail-on-warnings: 'true'  # Uncomment to fail on warnings too
