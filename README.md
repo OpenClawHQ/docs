@@ -15,28 +15,28 @@ The knowledge base for building skills and extensions with effectorHQ.
 
 ## Key Concepts
 
-**Skills**: Language-agnostic, markdown-based automation. Stored alongside code (or in a skills directory) and compiled/validated via the effector toolchain.
+**Skills**: Markdown-first capabilities that live next to code (or under a `skills/` tree). The toolchain parses, validates, and compiles them—no single vendor runtime required.
 
-**Extensions/Plugins**: Full-featured TypeScript packages. Implement channels, configuration, and complex logic. Distributed via npm.
+**Extensions/Plugins**: TypeScript packages with full IDE and deployment stories: channels, config, and heavier logic—published like any other npm module.
 
-**Registry**: Optional distribution surface. Effector manifests are runtime-neutral; registries are integrations, not the core.
+**Registry**: Optional. Manifests stay transport-agnostic; a registry is just one way to distribute them—not part of the core contract.
 
-**Core**: Shared kernel that parses `SKILL.md` + `effector.toml`, validates schema/types, and compiles to targets (MCP / OpenAI Agents / LangChain / JSON).
+**Core**: One kernel reads `SKILL.md` and `effector.toml`, checks schema and types, and emits MCP, OpenAI Agents, LangChain, or JSON IR.
 
-**Agent Runtime**: Any runtime that can consume a compiled target artifact (e.g. MCP tool schema). effectorHQ does not require a bespoke runtime.
+**Agent Runtime**: Whatever can load the compiled artifact (e.g. an MCP host). effectorHQ does not ship or mandate its own agent loop.
 
 ## Getting Help
 
-- Check the [Architecture guide](guides/architecture.md) to understand how everything fits together
-- Browse the [Skill Development guide](guides/skill-development.md) for building skills
-- See [Extension Development](guides/extension-development.md) for TypeScript plugins
-- Refer to [SKILL.md Format Reference](reference/skill-format.md) for all skill frontmatter fields
+- [Architecture](guides/architecture.md) — how manifests, core, targets, and bridges relate
+- [Skill Development](guides/skill-development.md) — authoring `SKILL.md`
+- [Extension Development](guides/extension-development.md) — TypeScript extensions
+- [SKILL.md format](reference/skill-format.md) — every frontmatter field
 
 ## Contributing to Docs
 
-Found an error? Have a better explanation? PRs are welcome.
+Corrections and clearer explanations are welcome as pull requests.
 
-For doc-specific conventions: write in plain language, use code examples liberally, keep paragraphs short.
+Prefer plain sentences, concrete code snippets, and short paragraphs.
 
 ---
 
