@@ -368,12 +368,12 @@ License identifier.
 **Example:**
 ```json
 {
-  "license": "MIT"
+  "license": "Apache-2.0"
 }
 ```
 
 **Common values:**
-- `"MIT"`
+- `"Apache-2.0"`
 - `"Apache-2.0"`
 - `"GPL-3.0"`
 - `"BSD-3-Clause"`
@@ -437,7 +437,7 @@ Search keywords for discovery.
   "version": "1.2.0",
   "description": "WhatsApp messaging channel integration with webhook support and media handling",
   "author": "OpenClaw Team",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "homepage": "https://docs.openclaw.com/channels/whatsapp",
   "repository": "https://github.com/effectorHQ/channel-whatsapp",
   "keywords": ["whatsapp", "messaging", "channel"],

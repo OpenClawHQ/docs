@@ -63,7 +63,7 @@ Scans your code, detects tool definitions, infers types and permissions. Review 
 - @effectorhq/studio — visual tool builder
 - effectorHQ/effector-action — CI validation
 
-All MIT licensed. All open source.
+All Apache 2.0 licensed. All open source.
 
 ## Tweet 7 — CTA
 

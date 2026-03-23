@@ -41,3 +41,7 @@ Prefer plain sentences, concrete code snippets, and short paragraphs.
 ---
 
 <sub>effectorHQ · Every effector extends the reach.</sub>
+
+## License
+
+This project is currently licensed under the Apache 2.0 License 。

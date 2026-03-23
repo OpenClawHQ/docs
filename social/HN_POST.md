@@ -39,7 +39,7 @@ From this file, the toolchain gives you:
 
 Auto-generate from an existing MCP server: `npx @effectorhq/core init --from-mcp .`
 
-The whole thing is 9 packages, 265+ tests, zero npm dependencies (all Node.js built-ins). MIT licensed.
+The whole thing is 9 packages, 265+ tests, zero npm dependencies (all Node.js built-ins). Apache 2.0 licensed.
 
 Looking for feedback and MCP server maintainers willing to try it out.
 

@@ -34,7 +34,7 @@ Body content goes here.
 | `metadata` | object | No | See below |
 | `version` | string | No | `1.0.0` |
 | `author` | string | No | `Jane Doe` |
-| `license` | string | No | `MIT` |
+| `license` | string | No | `Apache-2.0` |
 
 ### name
 
@@ -424,7 +424,7 @@ name: csv-processor
 version: 1.0.0
 description: Parse, filter, and transform CSV files. Export to JSON, SQL, or send to external services.
 author: Jane Doe
-license: MIT
+license: Apache-2.0
 metadata:
   openclaw:
     emoji: 📊
